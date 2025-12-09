@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img3"
+    android:orientation="vertical"
+    android:padding="50dp">
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="← Назад к фильмам"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="@color/aquamarine"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="400dp"
+            android:layout_height="700dp"
+            android:scaleType="centerCrop"
+            android:background="#2a2a2a" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_film"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/detail_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/year"
+                android:textColor="@color/aquamarine"
+                android:textSize="24sp"
+                android:layout_marginBottom="30dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/detail_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/opisanie"
+                android:textColor="#CCCCCC"
+                android:textSize="24sp"
+                android:lineSpacingMultiplier="1.2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
